@@ -170,9 +170,9 @@ bar {
 }
 
 exec /home/kn100/shellscripts/set-screen.sh
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
-bindsym XF86AudioMute exec "amixer -q -D pulse sset Master toggle"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 1 +5%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume 1 -5%"
+bindsym XF86AudioMute exec "pactl set-sink-mute 1 toggle"
 bindsym Mod1+Tab exec python3 /home/kn100/Apps/quickswitch.py
 bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
