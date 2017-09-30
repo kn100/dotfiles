@@ -131,5 +131,4 @@ alias df="df -Tha --total"
 alias free="free -mt"
 alias wget="wget -c"
 alias histg="history | grep"
-***REMOVED***
-***REMOVED***
+source ~/.env
