@@ -1,3 +1,7 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.tmpl": "html"
+    },
+    "window.zoomLevel": 0
 }

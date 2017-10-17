@@ -27,5 +27,11 @@ fi
 if [ -d "$HOME/Apps" ] ; then
     PATH="$HOME/Apps:$PATH"
 fi
+
+if [ -d "/usr/lib/go-1.8/bin" ] ; then
+    PATH="/usr/lib/go-1.8/bin:$PATH"
+fi
+
 alias python=python3
 
+export PATH="$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH"
